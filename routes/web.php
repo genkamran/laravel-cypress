@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/__cypress_/csrf_token', function () {
+Route::get('/__cypress__/csrf_token', function () {
     return csrf_token();
 });
 
