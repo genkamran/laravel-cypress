@@ -42,6 +42,7 @@ describe('Login Page',()=>{
 
                cy.contains('These credentials do not match our record');
 
+               
                cy.get('*[class="underline text-sm text-gray-600 hover:text-gray-900"]').click();
 
                cy.get('#email').type('muhammadkamran2211@gmail.com');
