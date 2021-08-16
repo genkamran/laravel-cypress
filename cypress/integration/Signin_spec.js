@@ -89,7 +89,7 @@ context('Valid Credentials',()=>{
 
             cy.get('#name').type('Muhammad Kamran');
 
-            //cy.get('#name').type('kamran');
+            cy.log('Enter Email');
 
             cy.get('#email').type('muhammadkamran2211@gmail.com');
 
