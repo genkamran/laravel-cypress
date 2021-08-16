@@ -1,7 +1,7 @@
 describe('Login Page',()=>{
     beforeEach(()=>{
 
-        cy.visit('http://laravel-cypress.test/');
+        cy.visit('/');
 
         cy.contains('a', 'Log in').click();
 
@@ -49,7 +49,8 @@ describe('Login Page',()=>{
 
                cy.get('*[class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150"]').click();
 
-               cy.contains('Connection');
+
+               cy.contains("Connection");
 
 
            });
@@ -63,7 +64,7 @@ describe('Login Page',()=>{
 
                    cy.contains('button', 'Log in').click();
 
-                   cy.contains('These credentials do not match our record');
+                   cy.contains("These credentials do not match our record");
 
 
                });
@@ -80,7 +81,7 @@ describe('Login Page',()=>{
 
                //cy.assertRedirect('/');
 
-              // cy.contains('Please include');
+              cy.contains("Please include");
 
            });
 

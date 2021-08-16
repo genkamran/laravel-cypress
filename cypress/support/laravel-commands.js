@@ -1,4 +1,4 @@
-/**
+ /**
  * Create a new user and log them in.
  *
  * @param {Object} attributes

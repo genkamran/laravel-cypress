@@ -11,12 +11,12 @@
 //
 // You can read more here:
 // https://on.cypress.io/configuration
-// ***********************************************************
+// **** *******************************************************
 
 import './commands';
 import './laravel-commands';
 import './laravel-routes';
-import './assertions';
+import './asserttions';
 
 before(() => {
     cy.task('activateCypressEnvFile', {}, { log: false });
