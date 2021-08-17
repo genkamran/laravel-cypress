@@ -15,8 +15,7 @@ describe('Login Page',()=>{
            it('Happy Path', () => {
 
               // cy.get('.underline').click();
-           cy.getCookie('XSRF-TOKEN')
-                   .then((cookie) => {
+
                cy.get('#email').type('muhammadkamran2211@gmail.com');
 
                cy.get('#password').type('12345678');
