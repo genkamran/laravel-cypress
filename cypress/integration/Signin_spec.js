@@ -1,7 +1,7 @@
 describe('Register an User',() =>{
 beforeEach(() => {
 
-    cy.visit('http://laravel-cypress.test/');
+    cy.visit('/');
 
     cy.exec("php artisan migrate:refresh && php artisan db:seed");
 
