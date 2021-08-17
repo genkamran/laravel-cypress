@@ -1,7 +1,9 @@
 describe('Login Page',()=>{
     beforeEach(()=>{
 
-        cy.visit('/');
+        cy.visit('http://laravel-cypress.test/');
+
+        cy.exec("php artisan migrate:refresh && php artisan db:seed");
 
         cy.contains('a', 'Log in').click();
 
@@ -13,7 +15,8 @@ describe('Login Page',()=>{
            it('Happy Path', () => {
 
               // cy.get('.underline').click();
-
+           cy.getCookie('XSRF-TOKEN')
+                   .then((cookie) => {
                cy.get('#email').type('muhammadkamran2211@gmail.com');
 
                cy.get('#password').type('12345678');

@@ -15,8 +15,8 @@
 
 import './commands';
 import './laravel-commands';
-import './laravel-routes';
-import './asserttions';
+//import './laravel-routes';
+//import './asserttions';
 
 before(() => {
     cy.task('activateCypressEnvFile', {}, { log: false });

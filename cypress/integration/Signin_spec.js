@@ -3,6 +3,9 @@ beforeEach(() => {
 
     cy.visit('http://laravel-cypress.test/');
 
+    cy.exec("php artisan migrate:refresh && php artisan db:seed");
+
+
     });
 context('Valid Credentials',()=>{
 
