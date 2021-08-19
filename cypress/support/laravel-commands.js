@@ -12,7 +12,7 @@ Cypress.Commands.add('login', (attributes = {}) => {
         .then((token) => {
             return cy.request({
                 method: 'POST',
-                url: '/__cypress__/login',
+                url: '/login',
                 body: { attributes, _token: token },
                 log: false,
             });
@@ -206,7 +206,7 @@ Cypress.Commands.add('artisan', (command, parameters = {}, options = {}) => {
     return cy.csrfToken().then((token) => {
         return cy.request({
             method: 'POST',
-            url: '/__cypress__/artisan',
+            url: '/artisan',
             body: { command: command, parameters: parameters, _token: token },
             log: false,
         });
