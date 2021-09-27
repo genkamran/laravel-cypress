@@ -85,7 +85,7 @@ Cypress.Commands.add('refreshRoutes', () => {
                     log: false,
                 });
 
-                Cypress.Laravel.routes = routes;
+                Cypress.routes = routes;
             });
     });
 });
@@ -206,7 +206,7 @@ Cypress.Commands.add('artisan', (command, parameters = {}, options = {}) => {
     return cy.csrfToken().then((token) => {
         return cy.request({
             method: 'POST',
-            url: '/artisan',
+            url: '/__cypress__/artisan',
             body: { command: command, parameters: parameters, _token: token },
             log: false,
         });
