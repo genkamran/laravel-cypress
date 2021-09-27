@@ -16,7 +16,7 @@ describe('Login Page',()=>{
 
               // cy.get('.underline').click();
 
-               cy.get('#email').type('muhammadkamrankhan2222@gmail.com');
+               cy.get('#email').type('muhammadkamrankhan2200@gmail.com');
 
                cy.get('#password').type('12340012');
 

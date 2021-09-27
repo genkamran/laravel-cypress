@@ -19,7 +19,7 @@ context('Valid Credentials',()=>{
 
         //cy.get('#name').type('kamran');
 
-        cy.get('#email').type('muhammadkamrankhan2222@gmail.com');
+        cy.get('#email').type('muhammadkamrankhan2200@gmail.com');
 
        cy.get('#password').type('12340012');
 
@@ -46,7 +46,7 @@ context('Valid Credentials',()=>{
 
             //cy.get('#name').type('kamran');
 
-            cy.get('#email').type('muhammadkamrankhan2222@gmail.com');
+            cy.get('#email').type('muhammadkamrankhan2200@gmail.com');
 
             cy.get('#password').type('12340012');
 
@@ -68,7 +68,7 @@ context('Valid Credentials',()=>{
 
             //cy.get('#name').type('kamran');
 
-            cy.get('#email').type('muhammadkamrankhan2222@gmail.com');
+            cy.get('#email').type('muhammadkamrankhan2200@gmail.com');
 
             cy.get('#password').type('12345');
 
@@ -94,7 +94,7 @@ context('Valid Credentials',()=>{
 
             cy.log('Enter Email');
 
-            cy.get('#email').type('muhammadkamran2211@gmail.com');
+            cy.get('#email').type('muhammadkamran2222@gmail.com');
 
             cy.get('#password').type('12345678');
 
@@ -106,9 +106,9 @@ context('Valid Credentials',()=>{
 
             cy.contains('a','Already registered').click();
 
-            cy.get('#email').type('muhammadkamrankhan2211@gmail.com');
+            cy.get('#email').type('muhammadkamrankhan2223@gmail.com');
 
-            cy.get('#password').type('12345678');
+            cy.get('#password').type('12345677');
 
             cy.get('#remember_me').click();
 
