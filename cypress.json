@@ -1,4 +1,4 @@
 {
-  "baseUrl": "http://laravel-cypress.test/",
+  "baseUrl": "http://laravel-cypress.test",
   "projectId": "apm68n"
 }

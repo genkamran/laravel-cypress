@@ -1,4 +1,4 @@
-/**
+ /**
  * Create a new user and log them in.
  *
  * @param {Object} attributes
@@ -12,7 +12,7 @@ Cypress.Commands.add('login', (attributes = {}) => {
         .then((token) => {
             return cy.request({
                 method: 'POST',
-                url: '/__cypress__/login',
+                url: '/login',
                 body: { attributes, _token: token },
                 log: false,
             });
@@ -85,7 +85,7 @@ Cypress.Commands.add('refreshRoutes', () => {
                     log: false,
                 });
 
-                Cypress.Laravel.routes = routes;
+                Cypress.routes = routes;
             });
     });
 });

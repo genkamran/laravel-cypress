@@ -92,14 +92,13 @@
       "POST"
     ]
   },
-  "cypress.csrf-token": {
-    "name": "cypress.csrf-token",
+  "": {
+    "name": null,
     "domain": null,
-    "action": "Laracasts\\Cypress\\Controllers\\CypressController@csrfToken",
-    "uri": "__cypress__/csrf_token",
+    "action": "App\\Http\\Controllers\\Auth\\ConfirmablePasswordController@store",
+    "uri": "confirm-password",
     "method": [
-      "GET",
-      "HEAD"
+      "POST"
     ]
   },
   "cypress.routes": {
@@ -107,15 +106,6 @@
     "domain": null,
     "action": "Laracasts\\Cypress\\Controllers\\CypressController@routes",
     "uri": "__cypress__/routes",
-    "method": [
-      "POST"
-    ]
-  },
-  "": {
-    "name": null,
-    "domain": null,
-    "action": "App\\Http\\Controllers\\Auth\\ConfirmablePasswordController@store",
-    "uri": "confirm-password",
     "method": [
       "POST"
     ]

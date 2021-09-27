@@ -1,7 +1,10 @@
 describe('Register an User',() =>{
 beforeEach(() => {
 
-    cy.visit('http://laravel-cypress.test/');
+    cy.visit('/');
+
+   // cy.exec("php artisan migrate:refresh && php artisan db:seed");
+
 
     });
 context('Valid Credentials',()=>{
@@ -12,15 +15,15 @@ context('Valid Credentials',()=>{
 
         cy.contains('a','Register').click();
 
-       cy.get('#name').type('Muhammad Kamran');
+       cy.get('#name').type('Muhammad kamran khan');
 
         //cy.get('#name').type('kamran');
 
-        cy.get('#email').type('muhammadkamran2211@gmail.com');
+        cy.get('#email').type('muhammadkamrankhan2200@gmail.com');
 
-       cy.get('#password').type('12345678');
+       cy.get('#password').type('12340012');
 
-       cy.get('#password_confirmation').type('12345678');
+       cy.get('#password_confirmation').type('12340012');
 
         cy.contains('button','Register').click();
 
@@ -39,15 +42,15 @@ context('Valid Credentials',()=>{
 
             cy.contains('a', 'Register').click();
 
-            cy.get('#name').type('Muhammad Kamran');
+            cy.get('#name').type('Muhammad Kamran khan');
 
             //cy.get('#name').type('kamran');
 
-            cy.get('#email').type('muhammadkamran2321@gmail.com');
+            cy.get('#email').type('muhammadkamrankhan2200@gmail.com');
 
-            cy.get('#password').type('12345678');
+            cy.get('#password').type('12340012');
 
-            cy.get('#password_confirmation').type('12346548');
+            cy.get('#password_confirmation').type('12340000');
 
             cy.contains('button', 'Register').click();
 
@@ -65,7 +68,7 @@ context('Valid Credentials',()=>{
 
             //cy.get('#name').type('kamran');
 
-            cy.get('#email').type('muhammadkamran2431@gmail.com');
+            cy.get('#email').type('muhammadkamrankhan2200@gmail.com');
 
             cy.get('#password').type('12345');
 
@@ -87,11 +90,11 @@ context('Valid Credentials',()=>{
 
             cy.contains('a', 'Register').click();
 
-            cy.get('#name').type('Muhammad Kamran');
+            cy.get('#name').type('Muhammad Kamran bhatti');
 
-            //cy.get('#name').type('kamran');
+            cy.log('Enter Email');
 
-            cy.get('#email').type('muhammadkamran2211@gmail.com');
+            cy.get('#email').type('muhammadkamran2222@gmail.com');
 
             cy.get('#password').type('12345678');
 
@@ -103,17 +106,19 @@ context('Valid Credentials',()=>{
 
             cy.contains('a','Already registered').click();
 
-            cy.get('#email').type('muhammadkamran2211@gmail.com');
+            cy.get('#email').type('muhammadkamrankhan2223@gmail.com');
 
-            cy.get('#password').type('12345678');
+            cy.get('#password').type('12345677');
 
             cy.get('#remember_me').click();
 
             cy.contains('button', 'Log in').click();
 
-            cy.get('*[class="ml-1"]').click();
+            cy.wait(3000);
 
-            cy.contains('a','Log Out').click();
+            //cy.get('.ml-1 div:first-child').click();
+
+            //cy.contains('a','Log Out').click();
 
         });
 
@@ -123,7 +128,7 @@ context('Valid Credentials',()=>{
 
             cy.contains('a', 'Register').click();
 
-            cy.get('#name').type('Muhammad Kamran');
+            cy.get('#name').type('Muhammad Kamran khan');
 
             //cy.get('#name').type('kamran');
 
